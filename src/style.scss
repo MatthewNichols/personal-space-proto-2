@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  #header {
+    h1 {
+      margin: 0;
+    }
+  }
+
+  #start-screen {
+    #avatars {
+      //width: calc(100% - 40px);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .avatar {
+        width: 40vw;
+
+        babylon {
+          border: 10px solid;
+          border-radius: 10px;
+        }
+
+        button {
+          margin: 40px;
+          font-size: 24px;
+          border: 2px solid;
+          border-radius: 10px;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+
+  #main-screen {
+    display: flex;
+  
+    #main-display {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      #canvas {
+        width: 100%;
+        height: calc(100vh - 60px);
+        flex-grow: 1;
+        height: calc(90vh - 40px);
+        border: 1px solid;
+      }
+
+      #legend {
+        padding: 20px;
+      }
+    }
+  }
+}

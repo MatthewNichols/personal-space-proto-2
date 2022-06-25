@@ -1,0 +1,34 @@
+{
+  "name": "personal-space-proto-2",
+  "version": "1.0.0",
+  "description": "Person VR Space. Taking lessons learned doing personal-space-proto-1 and creating with better architecture",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewNichols/personal-space-proto-2.git"
+  },
+  "author": "Matthew Nichols",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MatthewNichols/personal-space-proto-2/issues"
+  },
+  "homepage": "https://github.com/MatthewNichols/personal-space-proto-2#readme",
+  "devDependencies": {
+    "vite": "2.9.12",
+    "typescript": "4.7.4"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^5.6.0",
+    "@babylonjs/loaders": "^5.6.0",
+    "@babylonjs/viewer": "^5.7.0",
+    "axios": "^0.27.2",
+    "peerjs": "^1.4.6",
+    "sass": "^1.51.0",
+    "socket.io-client": "^4.5.1"
+  }
+}
