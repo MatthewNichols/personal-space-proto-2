@@ -1,3 +1,7 @@
 import "../style.scss";
+import "./screens/login-screen";
 
-console.log("Hi")
+
+// Load the login/scene selection screen
+
+// Based on login/scene selection info load the scene and avatar 

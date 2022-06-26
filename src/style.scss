@@ -33,32 +33,6 @@ body {
     }
   }
 
-  #start-screen {
-    #avatars {
-      //width: calc(100% - 40px);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-
-      .avatar {
-        width: 40vw;
-
-        babylon {
-          border: 10px solid;
-          border-radius: 10px;
-        }
-
-        button {
-          margin: 40px;
-          font-size: 24px;
-          border: 2px solid;
-          border-radius: 10px;
-          padding: 10px 20px;
-        }
-      }
-    }
-  }
-
   #main-screen {
     display: flex;
   

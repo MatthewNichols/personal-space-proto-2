@@ -19,14 +19,15 @@
   },
   "homepage": "https://github.com/MatthewNichols/personal-space-proto-2#readme",
   "devDependencies": {
-    "vite": "2.9.12",
-    "typescript": "4.7.4"
+    "typescript": "4.7.4",
+    "vite": "2.9.12"
   },
   "dependencies": {
     "@babylonjs/core": "^5.6.0",
     "@babylonjs/loaders": "^5.6.0",
     "@babylonjs/viewer": "^5.7.0",
     "axios": "^0.27.2",
+    "lit": "^2.2.6",
     "peerjs": "^1.4.6",
     "sass": "^1.51.0",
     "socket.io-client": "^4.5.1"
