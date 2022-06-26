@@ -1,0 +1,12 @@
+[
+  {
+      "id": "forest-1",
+      "title": "Forest 1",
+      "meshFile": "/assets/models/forest.glb"
+  },
+  {
+      "id": "forest-2",
+      "title": "Forest 2",
+      "meshFile": "/assets/models/forest.glb"
+  }
+]

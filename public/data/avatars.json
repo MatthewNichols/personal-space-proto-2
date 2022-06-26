@@ -1,0 +1,12 @@
+[
+    {
+        "id": "avatar-1",
+        "title": "Blondie",
+        "meshFile": "/assets/avatars/avatar1.glb"
+    },
+    {
+        "id": "avatar-2",
+        "title": "Dude",
+        "meshFile": "/assets/avatars/avatar2.glb"
+    }
+]
