@@ -2,14 +2,21 @@ import { DefaultViewer } from "@babylonjs/viewer";
 import { html, render } from "lit-html";
 import { getAvatarData } from "../communications/config-data";
 
+const avatarClickHandler = (avatar: any) => {
+  console.log("click", avatar);
+}
+
 const mainTemplate = (avatars: any[]) => (
   html`<ul> 
     ${avatars.map((avatar) => avatarTemplate(avatar) )}
   </ul>`);
+
 const avatarTemplate = (avatar: any) => (
   html`<li>
-    ${avatar.title}
-    <babylon id="${avatar.id}-model"></babylon>
+    <button @click=${ () => avatarClickHandler(avatar) }>
+      ${avatar.title}
+      <babylon id="${avatar.id}-model"></babylon>
+    </button>
   </li>`);
 
 const renderNode = document.getElementById('login-screen')!;
