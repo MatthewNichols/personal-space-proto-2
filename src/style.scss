@@ -33,6 +33,20 @@ body {
     }
   }
 
+  #login-screen {
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        button {
+          min-width: 600px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
   #main-screen {
     display: flex;
   
