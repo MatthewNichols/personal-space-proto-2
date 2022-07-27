@@ -1,17 +1,19 @@
 import { DefaultViewer } from "@babylonjs/viewer";
 import { html, render } from "lit-html";
 import { getAvatarData } from "../communications/config-data";
+import { login } from "../communications/communication-composer";
 
-const avatarClickHandler = (avatar: any) => {
+const avatarClickHandler = async (avatar: AvatarData) => {
   console.log("click", avatar);
+  await login(avatar.id)
 }
 
-const mainTemplate = (avatars: any[]) => (
+const mainTemplate = (avatars: AvatarData[]) => (
   html`<ul> 
     ${avatars.map((avatar) => avatarTemplate(avatar) )}
   </ul>`);
 
-const avatarTemplate = (avatar: any) => (
+const avatarTemplate = (avatar: AvatarData) => (
   html`<li>
     <button @click=${ () => avatarClickHandler(avatar) }>
       ${avatar.title}
