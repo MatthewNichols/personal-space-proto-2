@@ -21,31 +21,6 @@ body {
   padding: 0;
 }
 
-#app {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-
-  #header {
-    h1 {
-      margin: 0;
-    }
-  }
-
-  #login-screen {
-    ul {
-      list-style: none;
-      display: flex;
-
-      li {
-        button {
-          min-width: 600px;
-          cursor: pointer;
-        }
-      }
-    }
-  }
 
   #main-screen {
     display: flex;
@@ -68,4 +43,3 @@ body {
       }
     }
   }
-}
