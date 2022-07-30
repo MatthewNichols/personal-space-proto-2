@@ -1,15 +1,23 @@
 import { css, html, LitElement, TemplateResult } from 'lit';
-import { customElement } from 'lit/decorators.js';
+import { customElement, state } from 'lit/decorators.js';
 
 @customElement('app-root')
 export class AppRoot extends LitElement {
+
+    @state()
+    showLogin: Boolean = true;
+
+    @state()
+    showMain: Boolean = false;
+
     protected render(): TemplateResult {
         return html`
         <div id="header">
             <h1>Personal VR Space Prototype</h1>
         </div>
         
-        <login-screen></login-screen>
+        <login-screen ?hidden=${!this.showLogin}></login-screen>
+        <main-screen ?hidden=${!this.showMain}></main-screen>
         `;
     };
 
